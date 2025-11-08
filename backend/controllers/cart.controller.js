@@ -1,5 +1,5 @@
-const {CartItem} = require('../models/CartItem')
-const {Product}= require('../models/Product')
+const CartItem = require('../models/CartItem')
+const Product= require('../models/Product')
 const getCartItems = async (req,res)=>{
     try {
         const cartItems = await CartItem.find().populate('product');
