@@ -29,3 +29,5 @@ const mockCheckout = async (req,res)=>{
     res.status(500).json({ message: 'Error during checkout' });
   }
 }
+
+module.exports={mockCheckout};

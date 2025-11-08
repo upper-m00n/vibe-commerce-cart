@@ -59,3 +59,5 @@ const deleteCartItem = async (req,res)=>{
         res.status(500).json({ message: 'Error removing from cart' });
   }
 }
+
+module.exports={deleteCartItem,getCartItems,addCartItem};

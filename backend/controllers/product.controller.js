@@ -8,3 +8,5 @@ const getProducts= async (req,res)=>{
         res.status(500).json({ message: 'Error fetching products' });
   }
 }
+
+module.exports={getProducts}
