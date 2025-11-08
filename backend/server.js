@@ -1,6 +1,9 @@
 const express = require('express')
 const cors= require('cors');
 const { default: mongoose } = require('mongoose');
+const { getProducts } = require('./controllers/product.controller');
+const { getCartItems, addCartItem, deleteCartItem } = require('./controllers/cart.controller');
+const { mockCheckout } = require('./controllers/checkout.controller');
 
 require('dotenv').config()
 
@@ -21,3 +24,15 @@ mongoose.connect(process.env.MONGO_URI)
 app.get('/', (req,res)=>{
     res.send("API is working");
 });
+
+// product api
+app.get('/api/products',getProducts);
+
+//cart api
+app.get('/api/cart',getCartItems);
+app.post('/api/cart',addCartItem);
+app.delete('/api/cart/:id',deleteCartItem);
+
+// checkout api
+app.get('/api/checkout',mockCheckout);
+
