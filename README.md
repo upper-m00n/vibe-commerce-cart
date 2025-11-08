@@ -2,31 +2,25 @@ Vibe Commerce - Mock E-Commerce Cart
 
 This is a full-stack MERN (MongoDB, Express, React, Node.js) application built for the Vibe Commerce screening. It simulates a basic e-commerce shopping cart, complete with product listing, cart management, and a mock checkout, with bonus features including user-specific carts and real product data integration.
 
-Screenshots
+📸 Screenshots
 
 Products Page
+
+Products are dynamically loaded from the Fake Store API.
 <img width="1919" height="1199" alt="Screenshot 2025-11-08 121453" src="https://github.com/user-attachments/assets/f53363fc-6643-4cfe-9cc3-574bf41ac38f" />
 
-
 Cart & Checkout Form
+
+The cart and checkout form on the same page.
 <img width="1919" height="559" alt="Screenshot 2025-11-08 121515" src="https://github.com/user-attachments/assets/f3f409d2-441d-4316-9d3f-5ee17a1b88b0" />
 <img width="1511" height="364" alt="Screenshot 2025-11-08 121534" src="https://github.com/user-attachments/assets/f1ec6e0f-7cd3-41d8-bc57-55993286fd05" />
 
-
-Products are dynamically loaded from the Fake Store API.
-
-The cart and checkout form on the same page.
-
 Receipt Modal
-<img width="1917" height="1199" alt="Screenshot 2025-11-08 121544" src="https://github.com/user-attachments/assets/d0573b6e-40c8-4042-a049-8b7a7489b48c" />
 
 A mock receipt is shown after a successful checkout.
+<img width="1917" height="1199" alt="Screenshot 2025-11-08 121544" src="https://github.com/user-attachments/assets/d0573b6e-40c8-4042-a049-8b7a7489b48c" />
 
-
-
-(Note: To add screenshots, just drag your images into this README file on GitHub, and they will upload and generate a link for you.)
-
-Features
+✨ Features
 
 Core Requirements
 
@@ -58,7 +52,7 @@ Backend: Node.js, Express
 
 Database: MongoDB (with Mongoose)
 
-Setup and Installation
+🚀 Setup and Installation
 
 You will need two terminals running concurrently to run both the backend and frontend servers.
 
@@ -118,7 +112,7 @@ npm start
 
 The React app will automatically open in your browser at http://localhost:3000 and connect to your backend.
 
-Explanations (Bonus Features)
+🧠 Explanations (Bonus Features)
 
 1. Why use the Fake Store API?
 
@@ -142,7 +136,7 @@ This design correctly simulates a production environment where a user's auth tok
 
 Relying on console.log for errors is fine in development, but it's a poor user experience. If an API call fails silently, the user just thinks the app is broken. By setting an error state and displaying a formatted error message in the UI, we give the user immediate feedback and let them know what happened (e.g., "Failed to add item"), which inspires more confidence in the application.
 
-- API Endpoints
+API Endpoints
 
 All cart/checkout routes are user-specific and require an X-User-ID header.
 
