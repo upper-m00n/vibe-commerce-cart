@@ -11,6 +11,7 @@ const getCartItems = async (req,res)=>{
         res.json({ items: cartItems, total: total.toFixed(2) });
   } catch (err) {
     res.status(500).json({ message: 'Error fetching cart' });
+    console.log("error",err)
   }
 }
 
@@ -45,6 +46,7 @@ const addCartItem = async (req,res)=>{
 
   } catch (err) {
     res.status(500).json({ message: 'Error adding to cart' });
+    console.log("error",err)
   }
 }
 
@@ -57,6 +59,7 @@ const deleteCartItem = async (req,res)=>{
         res.json({ message: 'Item removed from cart' });
   } catch (err) {
         res.status(500).json({ message: 'Error removing from cart' });
+        console.log("error",err)
   }
 }
 

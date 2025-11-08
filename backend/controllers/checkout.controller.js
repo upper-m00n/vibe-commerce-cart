@@ -27,6 +27,7 @@ const mockCheckout = async (req,res)=>{
     res.json(receipt);
   } catch (err) {
     res.status(500).json({ message: 'Error during checkout' });
+    console.log("error",err)
   }
 }
 
