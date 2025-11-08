@@ -2,7 +2,7 @@ Vibe Commerce - Mock E-Commerce Cart
 
 This is a full-stack MERN (MongoDB, Express, React, Node.js) application built for the Vibe Commerce screening. It simulates a basic e-commerce shopping cart, complete with product listing, cart management, and a mock checkout, with bonus features including user-specific carts and real product data integration.
 
-📸 Screenshots
+Screenshots
 
 Products Page
 
@@ -20,7 +20,7 @@ Receipt Modal
 A mock receipt is shown after a successful checkout.
 <img width="1917" height="1199" alt="Screenshot 2025-11-08 121544" src="https://github.com/user-attachments/assets/d0573b6e-40c8-4042-a049-8b7a7489b48c" />
 
-✨ Features
+ Features
 
 Core Requirements
 
@@ -44,7 +44,7 @@ User-Specific Cart (DB Persistence): The cart is not global. It's persistent and
 
 Frontend Error Handling: The UI displays a friendly, non-intrusive error message if an API call fails (e.g., "Failed to add item to cart").
 
-🛠 Tech Stack
+ Tech Stack
 
 Frontend: React (with Hooks), Tailwind CSS, Axios
 
@@ -52,7 +52,7 @@ Backend: Node.js, Express
 
 Database: MongoDB (with Mongoose)
 
-🚀 Setup and Installation
+ Setup and Installation
 
 You will need two terminals running concurrently to run both the backend and frontend servers.
 
@@ -112,7 +112,7 @@ npm start
 
 The React app will automatically open in your browser at http://localhost:3000 and connect to your backend.
 
-🧠 Explanations (Bonus Features)
+ Explanations (Bonus Features)
 
 1. Why use the Fake Store API?
 
